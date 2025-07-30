@@ -7,7 +7,7 @@ servers:
   - url: https://api.hotel-booking.com/v1
     description: Production server
 paths:
-  /hotels/search:
+  /hotels:
     get:
       summary: Поиск доступных отелей
       description: Возвращает список отелей и номеров с учетом параметров поиска
@@ -73,8 +73,7 @@ paths:
     post:
       summary: Создание бронирования
       description: Создает новое бронирование и возвращает информацию для подтверждения
-      security:
-        - BearerAuth: []
+
       requestBody:
         required: true
         description: Данные для создания бронирования
