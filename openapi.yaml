@@ -73,8 +73,6 @@ paths:
     post:
       summary: Создание бронирования
       description: Создает новое бронирование и возвращает информацию для подтверждения
-      security:
-        - BearerAuth: []
       requestBody:
         required: true
         description: Данные для создания бронирования
